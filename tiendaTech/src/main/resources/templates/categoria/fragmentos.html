@@ -82,9 +82,9 @@
                                                         th:data-bs-descripcion="${c.descripcion}">
                                                     <i class="fa-solid fa-trash"></i> [[#{accion.eliminar}]]
                                                 </button>                                           
-                                                <a th:href="@{/categoria/modificar/}+${c.idCategoria}" class="btn btn-warning">
-                                                    <i class="fas fa-pencil-alt"></i> [[#{accion.actualizar}]]
-                                                </a>                                                
+                                            <a th:href="@{/categoria/modificar/{id}(id=${c.idCategoria})}" class="btn btn-warning">
+                                                <i class="fas fa-pencil-alt"></i> [[#{accion.actualizar}]]
+                                            </a>                                              
                                             </td>
                                         </tr>
                                     </tbody>
